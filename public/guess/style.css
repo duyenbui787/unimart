@@ -1,0 +1,11 @@
+@import './css/import/global.css';
+@import './css/import/index.css';
+@import './css/import/home.css';
+@import './css/import/detail_product.css';
+@import './css/import/blog.css';
+@import './css/import/detail_blog.css';
+@import './css/import/cart.css';
+@import './css/import/check_out.css';
+@import './css/import/category.css';
+@import './css/import/search.css';
+@import './css/import/introduce.css';

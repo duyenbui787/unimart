@@ -1,0 +1,103 @@
+.main-content-wp {
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+
+#category-product-page .section-head h3.section-title {
+    display: block;
+    background: none;
+    font-size: 21px;
+    font-weight: 700;
+    color: #3c3c3c;
+    margin: 40px 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+.filter-wp .desc {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+    text-align: right;
+}
+
+.form-filter select {
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid #cecece;
+    color: #666;
+}
+
+.form-filter button {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    position: relative;
+    right: 5px;
+    background: #bebebe;
+    border: 1px solid #bebebe;
+    color: #fff;
+}
+
+#category-product-page .section-detail ul.list-item {
+    background: none !important;
+}
+
+#category-product-page .section-detail ul.list-item li {
+    width: 25%;
+    padding: 10px 10px 30px 10px;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border: 1px solid transparent;
+    background: #fff;
+    box-shadow: 0 6px 6px 0 rgb(0 0 0 / 8%);
+}
+
+#category-product-page .section-detail ul.list-item li .product-name {
+    display: block;
+    margin: 15px 0px 5px 0px;
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+}
+
+#category-product-page .section-detail ul.list-item li .price {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#category-product-page .section-detail ul.list-item li .price .new {
+    display: inline-block;
+    color: #f12a43;
+    font-size: 15px;
+    margin-right: 5px;
+    font-weight: 500;
+}
+
+#category-product-page .section-detail ul.list-item li .price .old {
+    display: inline-block;
+    color: #999;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+#category-product-page .section-detail ul.list-item li .action {
+    display: flex;
+    justify-content: space-between;
+}
+
+#category-product-page .section-detail ul.list-item li .action a {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 30px;
+}
+
+#category-product-page .section-detail ul.list-item li .action .add-cart {
+    background: #333;
+    color: #fff;
+}
+
+#category-product-page .section-detail ul.list-item li .action .buy-now {
+    background: #be1515;
+    color: #fff;
+}

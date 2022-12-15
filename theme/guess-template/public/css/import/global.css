@@ -1,0 +1,44 @@
+/* GLOBAL */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: normal;
+    color: #272727;
+    line-height: 24px;
+}
+
+.wp-inner {
+    width: 1170px;
+    margin: 0px auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    margin-bottom: 0!important;
+}
+
+ul li {
+    list-style: none!important;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.col-md-5,
+.col-md-2,
+.col-md-6,
+.col-md-4,
+.col-md-12 {
+    padding: 0 !important;
+}

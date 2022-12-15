@@ -1,0 +1,143 @@
+#order-info-wp .section-head {
+    position: relative;
+}
+
+#order-info-wp h1.title {
+    font-size: 21px;
+    color: #272727;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+#order-info-wp h1.title:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100px;
+    height: 2px;
+    background: #bf2424;
+}
+
+#order-info-wp #customer-info-wp {
+    padding-right: 30px!important;
+}
+
+.form-row>[class*=col-] {
+    padding: 0!important;
+}
+
+#order-info-wp #customer-info-wp .form-row .col-right input {
+    width: 278px!important;
+}
+
+#order-info-wp #customer-info-wp .form-row label {
+    display: block;
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#order-info-wp #customer-info-wp .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#order-info-wp #customer-info-wp .form-row input[type="text"],
+#order-info-wp #customer-info-wp .form-row input[type="email"],
+#order-info-wp #customer-info-wp .form-row input[type="tel"] {
+    width: 248px;
+    padding: 6px 12px;
+    border: 1px solid #cccccc;
+}
+
+#customer-info-wp .form-row:nth-child(3) .form-col {
+    width: 100%;
+    padding-right: 0;
+}
+
+#order-info-wp #customer-info-wp .form-row textarea {
+    display: block;
+    height: 150px;
+    padding: 6px 12px;
+    width: 100%;
+    border: 1px solid #cccccc;
+}
+
+
+/* END CUSTOMER-INFO-WP */
+
+#order-info-wp #order-review-wp {
+    padding-left: 30px!important;
+}
+
+#order-review-wp table {
+    width: 100%;
+    text-align: left;
+}
+
+#order-review-wp .shop-table tr td:nth-child(2) {
+    text-align: right;
+}
+
+#order-review-wp table thead tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#order-review-wp table thead tr td {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#order-review-wp .shop-table tbody tr td {
+    padding: 15px 0px;
+    border-bottom: 1px solid #ddd;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#order-review-wp .shop-table tfoot tr td {
+    padding: 15px 0px;
+    text-transform: uppercase;
+    font-family: 'Roboto Medium';
+}
+
+#order-review-wp #payment-checkout-wp {
+    margin-top: 25px;
+}
+
+#order-review-wp #payment-checkout-wp ul#payment_methods {
+    background: none !important;
+}
+
+#order-review-wp #payment-checkout-wp ul#payment_methods li {
+    padding-bottom: 10px;
+    line-height: 15px;
+}
+
+#order-review-wp #payment-checkout-wp ul#payment_methods li label {
+    /* display: inline-block; */
+    padding-left: 5px;
+    font-size: 14px;
+    margin-bottom: 0;
+    vertical-align: 1px;
+    font-family: roboto regular;
+}
+
+#order-review-wp .place-order-wp {
+    margin-top: 28px;
+    text-align: right;
+}
+
+#order-review-wp .place-order-wp input {
+    display: inline-block;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-family: 'Roboto Medium';
+    border: none;
+    outline: none;
+    background: #3f5da6;
+    color: #fff;
+}
