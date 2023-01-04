@@ -81,9 +81,9 @@ Route::middleware('auth')->group(function(){
 
 //GUESS
 Route::get('/',[\App\Http\Controllers\GuessHomeController::class, 'show']);
-Route::get('/home',[\App\Http\Controllers\GuessHomeController::class, 'show'])->name('home');
+Route::get('/trang-chu',[\App\Http\Controllers\GuessHomeController::class, 'show'])->name('home');
 
-Route::get('/search',[\App\Http\Controllers\GuessHomeController::class, 'search'])->name('search');
+Route::get('/tim-kiem',[\App\Http\Controllers\GuessHomeController::class, 'search'])->name('search');
 
 
 
@@ -102,6 +102,12 @@ Route::get('cart/remove/{rowId}',[\App\Http\Controllers\GuessCartController::cla
 Route::get('cart/destroy',[\App\Http\Controllers\GuessCartController::class, 'destroy'])->name('cart.destroy');
 
 Route::get('checkout/show',[\App\Http\Controllers\GuessCheckOutController::class, 'show']);
+Route::get('checkout/add/{id}',[\App\Http\Controllers\GuessCheckOutController::class, 'add'])->name('checkout.add');
+Route::get('checkout/add_feature_pro/{id}',[\App\Http\Controllers\GuessCheckOutController::class, 'add_feature_pro'])->name('checkout.add_feature_pro');
+Route::get('checkout/add_best_seller_pro/{id}',[\App\Http\Controllers\GuessCheckOutController::class, 'add_best_seller_pro'])->name('checkout.add_bestseller_pro');
+
+
+
 
 Route::get('blog/show',[\App\Http\Controllers\GuessBlogController::class, 'show']);
 Route::get('detail-blog/show/{id}',[\App\Http\Controllers\GuessDetailBlogController::class, 'show'])->name('detail-blog');

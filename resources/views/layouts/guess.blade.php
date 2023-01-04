@@ -15,22 +15,23 @@
     <link rel="stylesheet" href="{{asset('guess/owlcarousel/assets/owl.theme.default.min.css')}}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <title>Dự án làm cv</title>
+    <title>Unimart</title>
 </head>
 
 <body>
+  
     <div id="wrapper">
         <div id="header-wp">
             <div id="header-top">
                 <div class="row">
                     <div class="col-md-5 col-sm-4 col-4  header-top-left">
                         <ul class="menu-header-left d-md-flex">
-                            <li>
-                                <a href="{{url('/')}}" title="TRANG CHỦ" class="item-wp active">
+                            <li class="active">
+                                <a href="{{url('/')}}" title="TRANG CHỦ" class="item-wp">
                                     <span class="item">TRANG CHỦ</span>
                                 </a>
                             </li>
-                            <li>
+                            <li class="">
                                 <a href="{{url('product/show')}}" title="SẢN PHẨM" class="item-wp">
                                     <span class="item">SẢN PHẨM</span>
                                 </a>
@@ -146,8 +147,7 @@
                             <ul id="main-menu" class="d-none d-sm-flex">
                                 <li>
                                     <a href="{{url('category/show/15')}}" class="category">Điện thoại</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-1"></i>
-                                    <nav class="header-cell-category icon-1">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/15')}}">CHỌN THEO HÃNG</a></h6>
@@ -213,8 +213,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/3')}}" class="category">Máy tính bảng</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-2"></i>
-                                    <nav class="header-cell-category icon-2">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/3')}}">CHỌN THEO HÃNG</a></h6>
@@ -276,8 +275,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/16')}}" class="category">Laptop</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-3"></i>
-                                    <nav class="header-cell-category icon-3">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/16')}}">CHỌN THEO HÃNG</a></h6>
@@ -347,8 +345,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/18')}}" class="category">Tai nghe</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-4"></i>
-                                    <nav class="header-cell-category icon-4">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/18')}}">CHỌN THEO HÃNG</a></h6>
@@ -401,8 +398,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/19')}}" class="category">Đồng hồ</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-5"></i>
-                                    <nav class="header-cell-category icon-5">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/19')}}">CHỌN THEO HÃNG</a></h6>
@@ -461,8 +457,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/20')}}" class="category">Phụ kiện</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-6"></i>
-                                    <nav class="header-cell-category icon-6">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/20')}}">PHỤ KIỆN ĐIỆN THOẠI</a></h6>
@@ -508,8 +503,7 @@
                                 </li>
                                 <li>
                                     <a href="{{url('category/show/17')}}" class="category">Tivi</a>
-                                    <i class="fa-solid fa-angle-right icon-right d-sm-none icon-7"></i>
-                                    <nav class="header-cell-category icon-7">
+                                    <nav class="header-cell-category">
                                         <div class="cell-list-category">
                                             <div class="header-float">
                                                 <h6 class="header-float-title"><a href="{{url('category/show/17')}}">CHỌN THEO HÃNG</a></h6>
@@ -1664,14 +1658,14 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="{{asset('guess/js/app.js')}}" type="text/javascript"></script>
     <script>
-        $(document).ready(function(){
-            $('#sort').change(function(){
+        $(document).ready(function() {
+            $('#sort').change(function() {
                 var url = $(this).val();
-            // alert(url);
-            if (url) {
-                window.location = url;
-            }
-            return false;
+                // alert(url);
+                if (url) {
+                    window.location = url;
+                }
+                return false;
             })
         })
     </script>
@@ -1741,6 +1735,7 @@
             // END CAROUSEL-FEATURE-PRO
         })
     </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -59,23 +59,19 @@
                                                 </span>
                                             </div>
                                             <div class="comment">
-                                                <span> (9999+ Nhận xét)</span>
+                                                <span> (125+ Nhận xét)</span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="price-product">
-                                        <span class="price">{{number_format($product->price)}}</span>
+                                        <span class="price">{{number_format($product->price)}}đ</span>
                                     </div>
                                 </div>
                                 <div class="product-color-size info-right-item">
                                     <div class="info-right-item">
                                         <div class="desc">
                                             <h5 class="info">Thông tin sản phẩm:</h5>
-                                            <p>Bộ vi xử lý :Intel Core i505200U 2.2 GHz (3MB L3)</p>
-                                            <p>Cache upto 2.7 GHz</p>
-                                            <p>Bộ nhớ RAM :4 GB (DDR3 Bus 1600 MHz)</p>
-                                            <p>Đồ họa :Intel HD Graphics</p>
-                                            <p>Ổ đĩa cứng :500 GB (HDD)</p>
+                                            <p>{!! str_replace("," ,"<br/>", $product->desc) !!}</p></br>
                                         </div>
                                     </div>
                                     <div class="card-product-add info-right-item">
@@ -97,7 +93,7 @@
                                                 </div>
                                                 <div class="col-md-10 detail-product-freeship">
                                                     <div class="title">Miễn phí vận chuyển</div>
-                                                    <div class="text">Giao hàng miễn phí tiêu chuẩn cho các đơn hàng trên 230.000₫. Giao hàng dự kiến vào ngày 15/08/2022 - 17/08/2022.
+                                                    <div class="text">Giao hàng miễn phí tiêu chuẩn cho các đơn hàng trên 1.000.000₫. 
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,7 +141,9 @@
                                 <div class="card border-0 rounded-0">
                                     <img src="{{asset($item->product->thumbnail)}}" alt="" class="card-img">
                                     <div class="buy-product" data-toggle="modal" data-target="#demo-modal">
-                                        <a href="{{route('checkout',$item->id)}}">Mua sản phẩm này</a>
+                                        <a href="{{route('checkout.add_bestseller_pro',$item->id)}}">Mua sản phẩm này</a>
+                                       
+
                                     </div>
                                 </div>
                                 @endforeach

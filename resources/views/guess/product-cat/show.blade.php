@@ -29,7 +29,7 @@
                     <h3 class="section-title">{{$product_cat->name}}</h3>
                     @endforeach
                     <div class="filter-wp">
-                        <p class="desc">Hiển thị 45 trên 50 sản phẩm</p>
+                        <p class="desc">Hiển thị 4 trên 20 sản phẩm</p>
                         <div class="form-filter">
                             <form method="" action="">
                                 <select name="sort" id="sort">
@@ -63,7 +63,7 @@
                     </ul>
                 </div>
             </div>
-            {{$products->links()}}
+            {{$products->links('pagination::bootstrap-4')}}
 
 
         </div>

@@ -2,6 +2,21 @@
 @section('content')
 <div class="main-content-wp" id="product">
     <div class="wp-inner">
+    <div class="section" id="breadcrumb-wp">
+            <div class="section-detail">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="">Trang chủ</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="">Sản phẩm</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- END BREADCRUMB -->
         <div class="section list-product-wp">
             <div class="section-head">
                 @foreach($mobile_cat as $item)

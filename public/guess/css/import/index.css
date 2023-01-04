@@ -32,16 +32,10 @@
     color: #000;
 }
 
-ul.menu-header-left li a.active {
+ul.menu-header-left li.active {
     background-color: #fff;
     color: #000!important;
 }
-
-
-/* ul.menu-header-left li a.active {
-    background-color: #fff;
-    color: #000;
-} */
 
 #header-top ul.carousel-header .owl-nav button.owl-next:hover {
     color: #000;
@@ -127,9 +121,6 @@ ul.menu-header-left li a.active {
 }
 
 #action-wp #cart-wp {
-    /* position: relative; */
-    /* padding: 16px 0 16px 21px; */
-    /* padding-left: 33px; */
     color: #666;
     cursor: pointer;
 }
@@ -318,13 +309,9 @@ ul.menu-header-left li a.active {
 }
 
 #nav-wrapper {
-    display: table;
+    /* display: table; */
     width: 100%;
     position: relative;
-}
-
-#header-body {
-    display: table-cell;
 }
 
 nav.header-cell-category {

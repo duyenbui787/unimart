@@ -52,7 +52,9 @@ class GuessCartController extends Controller
     }
     function order(Request $request)
     {
+        $cart=Cart::content();
         $total = Cart::total();
+        // dd($total);
         Customer::create([
             'name' => $request->input('fullname'),
             'email' => $request->input('email'),
@@ -60,12 +62,14 @@ class GuessCartController extends Controller
             'phone_number' => $request->input('phone'),
             'note' => $request->input('note'),
         ]);
-
+        
         Bill::create([
             'date_order' => date('Y-m-d'),
             'payment' => $request->input('payment-method'),
-            'total_price' => $total,
+            'total_price' => (int)$total,
         ]);
+        Session::forget('cart');
+        return redirect()->back()->with('status','Đặt hàng thành công');
         // ==============================================
         $data =[
             'name' => $request->input('fullname'),
@@ -78,6 +82,7 @@ class GuessCartController extends Controller
             'total'=>$total
 
         ];
+        
         // dd($data);
     }
 

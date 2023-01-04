@@ -135,11 +135,11 @@
                             </a>
                             <a href="" class="product-name">{{$item->product->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($item->product->price)}}</span>
+                                <span class="new">{{number_format($item->product->price)}}đ</span>
                                 <span class="old">40.000.000đ</span>
                             </div>
                             <div class="action">
-                                <a href="{{route('checkout',$item->id)}}" class="buy">Mua ngay</a>
+                                <a href="{{route('checkout.add_feature_pro',$item->id)}}" class="buy">Mua ngay</a>
                             </div>
                         </div>
                         @endforeach
@@ -201,12 +201,12 @@
                             </a>
                             <a href="{{route('detail_product',$product->id)}}" title="" class="product-name">{{$product->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($product->price)}}</span>
-                                <span class="old">8.990.000đ</span>
+                                <span class="new">{{number_format($product->price)}}đ</span>
+                                <span class="old">40.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$product->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -231,12 +231,12 @@
                             </a>
                             <a href="{{route('detail_product',$laptop->id)}}" title="" class="product-name">{{$laptop->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($laptop->price)}}</span>
-                                <span class="old">8.990.000đ</span>
+                                <span class="new">{{number_format($laptop->price)}}đ</span>
+                                <span class="old">40.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$laptop->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$laptop->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -264,12 +264,12 @@
                             </a>
                             <a href="{{route('detail_product',$tivi->id)}}" title="" class="product-name">{{$tivi->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($tivi->price)}}</span>
-                                <span class="old">8.990.000đ</span>
+                                <span class="new">{{number_format($tivi->price)}}đ</span>
+                                <span class="old">25.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$tivi->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$tivi->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -296,12 +296,12 @@
                             </a>
                             <a href="{{route('detail_product',$ipad->id)}}" title="" class="product-name">{{$ipad->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($ipad->price)}}</span>
-                                <span class="old">8.990.000đ</span>
+                                <span class="new">{{number_format($ipad->price)}}đ</span>
+                                <span class="old">30.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$ipad->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$ipad->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -328,12 +328,12 @@
                             </a>
                             <a href="{{route('detail_product', $sound->id)}}" title="" class="product-name">{{$sound->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($sound->price)}}</span>
+                                <span class="new">{{number_format($sound->price)}}đ</span>
                                 <span class="old">8.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$sound->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$sound->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -360,12 +360,12 @@
                             </a>
                             <a href="{{route('detail_product', $watch->id)}}" title="" class="product-name">{{$watch->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($watch->price)}}</span>
+                                <span class="new">{{number_format($watch->price)}}đ</span>
                                 <span class="old">8.990.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$watch->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$watch->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach
@@ -392,12 +392,12 @@
                             </a>
                             <a href="{{route('detail_product', $case->id)}}" title="" class="product-name">{{$case->name}}</a>
                             <div class="price">
-                                <span class="new">{{number_format($case->price)}}</span>
-                                <span class="old">8.990.000đ</span>
+                                <span class="new">{{number_format($case->price)}}đ</span>
+                                <span class="old">5.000.000đ</span>
                             </div>
                             <div class="action">
                                 <a href="{{route('cart.add',$case->id)}}" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="{{route('checkout',$product->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
+                                <a href="{{route('checkout.add',$case->id)}}" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
                             </div>
                         </li>
                         @endforeach

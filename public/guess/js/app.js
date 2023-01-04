@@ -13,44 +13,40 @@ $(document).ready(function() {
         });
 
         //Header
-        $('ul.menu-header-left li a').click(function() {
-            if (!$(this).hasClass('active')) {
-                $('ul.menu-header-left li a').removeClass('active');
-                $(this).addClass('active');
+        var CurrentUrl = window.location.href;
+        $('.menu-header-left a').each(function(Key, Value) {
+            if (Value['href'] === CurrentUrl) {
+                $('.menu-header-left li').removeClass('active');
+                $(Value).parent().addClass('active');
             }
-        })
+        });
+
+        //MENU RESPONSIVE
+
         $('#toggle').click(function() {
             $('.menu-responsive').toggle();
         });
         $('.close').click(function() {
             $('.menu-responsive').hide();
         });
-
-        //MENU RESPONSIVE
         $('.item-title').click(function() {
             $(this).next('.item-content-wp').toggle() && $(this).children('.icon-plus').toggle() && $('.icon-minus').show();
-
-
         })
         $('.item-title-sub').click(function() {
             $('.icon-circle').removeClass('active');
             $(this).next('.sub-menu').toggle() && $(this).children('.icon-plus-sub').toggle() && $('.icon-minus-sub').show() &&
                 $(this).find('.icon-circle').toggleClass('active');
-            // return false;
         })
         $(window).scroll(function() {
             $('.menu-responsive').hide();
         });
         //Banner
         $('.discount-outside').click(function() {
-
             $('.icon-arrow').toggleClass('open');
             if ($('.icon-arrow').hasClass('open')) {
-                $('.discount-inside').toggle() && $('.discount-outside').offset({
+                $('.discount-inside').toggle().offset({ left: 910 }) && $('.discount-outside').offset({
                     left: 875
-                }) && $('#discount-wp').offset({
-                    left: 910
-                });
+                })
             } else {
                 $('.discount-inside').hide() && $('.discount-outside').offset({
                     left: 1485
@@ -80,15 +76,6 @@ $(document).ready(function() {
             $('ul.list-thumb li').removeClass('active');
             $(this).addClass('active');
         });
-
-        // $('ul.list-thumb li').click(function() {
-        //     var src_img = $(this).find('img').attr('src');
-        //     $('.show-picture img').attr('src', src_img);
-
-        // })
-
-
-
     })
     // amount
 let amountElement = document.getElementById('amount')
