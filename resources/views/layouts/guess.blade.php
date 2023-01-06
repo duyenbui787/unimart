@@ -19,10 +19,14 @@
 </head>
 
 <body>
-  
+
     <div id="wrapper">
         <div id="header-wp">
             <div id="header-top">
+                <div id="banner-top">
+                    <i class="fa-solid fa-truck truck"></i>
+                    <div id="freeship">Miễn phí vận chuyển</div>
+                </div>
                 <div class="row">
                     <div class="col-md-5 col-sm-4 col-4  header-top-left">
                         <ul class="menu-header-left d-md-flex">
