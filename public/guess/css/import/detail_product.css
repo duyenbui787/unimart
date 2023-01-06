@@ -220,8 +220,8 @@ ul.list-thumb li a img {
     font-size: 18px;
     font-weight: 800;
     text-transform: uppercase;
-    /* background: #000; */
-    background: linear-gradient(#ac0204, #e11b1e);
+    background: #000;
+    /* background: linear-gradient(#ac0204, #e11b1e); */
     color: #fff;
     transition: background .2s;
 }
