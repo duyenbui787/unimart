@@ -20,6 +20,35 @@
         </div>
         <!-- END BREADCRUMB -->
         <div class="wp-content">
+        <div class="section d-none d-xl-block" id="discount-wp">
+                <div class="section-detail d-flex banner-discount-right">
+                    <div class="discount-outside" style="background-color:rgb(74, 74, 74)">
+                        <div>
+                            <i class="fa-solid fa-caret-down icon-arrow"></i>
+                        </div>
+
+                        <div class="discount" style="color: rgb(255, 255, 255)">GIẢM 70K</div>
+                    </div>
+
+                    <div class="discount-inside">
+                        <div class="img-banner">
+                            <img src="{{asset('guess/img/home/banner-discount-right.png')}}" alt="">
+                        </div>
+
+                        <div class="register-form">
+                            <div class="inside-input-btn d-flex">
+                                <div class="inside-input">
+                                    <input type="text" placeholder="Nhập địa chỉ email của bạn">
+                                </div>
+
+                                <div class="btn-register">
+                                    <button>Đăng ký</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="section" id="detail-product-wp">
                 <div class="section-detail">
                     <div class="row">

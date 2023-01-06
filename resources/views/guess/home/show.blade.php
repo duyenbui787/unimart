@@ -53,7 +53,7 @@
         <div class="wp-content-body">
             <div class="section d-none d-xl-block" id="discount-wp">
                 <div class="section-detail d-flex banner-discount-right">
-                    <div class="discount-outside" style="background-color:rgb(74, 74, 74)">
+                    <div class="discount-outside" style="background-color:#000">
                         <div>
                             <i class="fa-solid fa-caret-down icon-arrow"></i>
                         </div>

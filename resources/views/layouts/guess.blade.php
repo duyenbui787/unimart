@@ -1646,7 +1646,7 @@
             </div>
             <!-- END FOOT-TOP -->
             <div id="foot-bot">
-                <p id="copy-right">© Bản quyền thuộc về ISMART</p>
+                <p id="copy-right">© Bản quyền thuộc về UNIMART</p>
             </div>
         </div>
     </div>
