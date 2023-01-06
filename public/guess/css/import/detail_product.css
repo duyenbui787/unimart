@@ -87,6 +87,7 @@ ul.list-thumb li a img {
     font-size: 20px;
     font-weight: 500;
     color: #222;
+    text-transform: uppercase;
 }
 
 .info-right .SKU-review-product {
