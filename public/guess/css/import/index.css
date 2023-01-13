@@ -14,14 +14,15 @@
 
 #banner-top {
     display: flex;
-    background: #e90005;
+    /* background: #e90005; */
+    background: #da0308;
     justify-content: center;
     align-items: center;
-    padding: 4px;
+    padding: 3px;
 }
 
 .truck {
-    font-size: 30px;
+    font-size: 27px;
     color: #fff;
 }
 
@@ -29,8 +30,8 @@
     margin-left: 12px;
     color: #fff;
     font-weight: 500;
-    font-size: 21px;
-    letter-spacing: 1px;
+    font-size: 19px;
+    letter-spacing: 2px;
     text-transform: uppercase
 }
 
@@ -575,4 +576,5 @@ form {
     bottom: 40px;
     right: 20px;
     cursor: pointer;
+    z-index: 10;
 }

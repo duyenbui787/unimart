@@ -11,6 +11,8 @@ body {
 .wp-inner {
     width: 1170px;
     margin: 0px auto;
+    /* padding-left: 50px;
+    padding-right: 50px; */
 }
 
 img {

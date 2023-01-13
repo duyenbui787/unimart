@@ -76,6 +76,9 @@ $(document).ready(function() {
             $('ul.list-thumb li').removeClass('active');
             $(this).addClass('active');
         });
+        //  ZOOM PRODUCT DETAIL
+        $("#zoom").elevateZoom({ gallery: 'list-thumb', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif' });
+
     })
     // amount
 let amountElement = document.getElementById('amount')

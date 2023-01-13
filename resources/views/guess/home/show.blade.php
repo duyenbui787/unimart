@@ -1,9 +1,91 @@
 @extends('layouts.guess')
 @section('content')
-<div class="main-content-wp" class="home-page">
+<div class="main-content-wp" id="home-page">
+    <div class="section" id="banner-home-top">
+        <a href="">
+            <img class="card-img" src="public/guess/img/home/wp-header-1.webp" alt="">
+        </a>
+        <a href="">
+            <img class="card-img" src="public/guess/img/home/wp-header-2.webp" alt="">
+        </a>
+        <a href="">
+            <img class="card-img" src="public/guess/img/home/wp-header-3.webp" alt="">
+        </a>
+    </div>
+    <div class="section" id="banner-home">
+        <div class="owl-carousel carousel-banner-home owl-theme">
+            <div class="item">
+                <a href="">
+                    <img class="card-img" src="public/guess/img/home/banner-01.jpeg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img class="card-img" src="public/guess/img/home/banner-02.jpeg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img class="card-img" src="public/guess/img/home/banner-03.png" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img class="card-img" src="public/guess/img/home/banner-04.jpeg" alt="">
+                </a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img class="card-img" src="public/guess/img/home/banner-05.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="support">
+        <div class="section-detail">
+            <ul class="list-item d-flex">
+                <li>
+                    <div class="thumb">
+                        <img src="public/guess/img/home/support-1.png" alt="">
+                    </div>
+                    <h3 class="title">Miễn phí vận chuyển</h3>
+                    <p class="desc">Tới tận tay khách hàng</p>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="public/guess/img/home/support-2.png" alt="">
+                    </div>
+                    <h3 class="title">Tư vấn 24/7</h3>
+                    <p class="desc">1900.9999</p>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="public/guess/img/home/support-3.png" alt="">
+                    </div>
+                    <h3 class="title">Tiết kiệm hơn</h3>
+                    <p class="desc">Với nhiều ưu đãi cực lớn</p>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="public/guess/img/home/support-4.png" alt="">
+                    </div>
+                    <h3 class="title">Thanh toán nhanh</h3>
+                    <p class="desc">Hỗ trợ nhiều hình thức</p>
+                </li>
+                <li>
+                    <div class="thumb">
+                        <img src="public/guess/img/home/support-5.png" alt="">
+                    </div>
+                    <h3 class="title">Đặt hàng online</h3>
+                    <p class="desc">Thao tác đơn giản</p>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="wp-inner">
+
         <div id="wp-content-top" class="d-flex">
-            <div id="left-banner">
+            <!-- <div id="left-banner">
                 <div class="section d-none d-sm-block">
                     <div class="section-detail ">
                         <ul class="list-item">
@@ -25,9 +107,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- END LEFT BANNER -->
-            <div id="main-banner">
+            <!-- <div id="main-banner">
                 <div class="section">
                     <div class="owl-carousel carousel-top owl-theme">
                         <div class="item">
@@ -47,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- END MAIN-BANNER -->
         </div>
         <div class="wp-content-body">
@@ -80,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section" id="support">
+            <!-- <div class="section" id="support">
                 <div class="section-detail">
                     <ul class="list-item d-flex">
                         <li>
@@ -120,7 +202,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- END SUPPORT -->
             <div class="section" id="feature-product-wp">
                 <div class="section-head">

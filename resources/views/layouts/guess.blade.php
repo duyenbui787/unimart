@@ -24,6 +24,7 @@
         <div id="header-wp">
             <div id="header-top">
                 <div id="banner-top">
+                    <!-- <img src="public/guess/img/home/banner-header.webp" alt=""> -->
                     <i class="fa-solid fa-truck truck"></i>
                     <div id="freeship">Miễn phí vận chuyển</div>
                 </div>
@@ -1660,6 +1661,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="{{asset('guess/js/elevatezoom-master/jquery.elevatezoom.js')}}" type="text/javascript"></script>
     <script src="{{asset('guess/js/app.js')}}" type="text/javascript"></script>
     <script>
         $(document).ready(function() {
@@ -1737,6 +1739,50 @@
                 }
             })
             // END CAROUSEL-FEATURE-PRO
+            $('.owl-carousel.owl-carousel-best-seller').owlCarousel({
+                loop: true,
+                dots: false,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                slideBy: 1,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+
+
+            })
+            //END CAROUSEL BEST-SELLER
+            $('.owl-carousel.carousel-banner-home').owlCarousel({
+                loop: true,
+                dots: false,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                slideBy: 1,
+                smartSpeed: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+
+
+            })
         })
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
